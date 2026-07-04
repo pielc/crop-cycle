@@ -1,0 +1,16 @@
+{
+  "name": "crop-cycle",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "dependencies": {
+    "easymidi": "^3.2.0",
+    "nodemon": "^3.1.14"
+  }
+}
