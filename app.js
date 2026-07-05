@@ -1,6 +1,7 @@
 import easymidi from "easymidi";
 
 import InputCollector from "./modules/InputCollector.js";
+import Clock from "./modules/Clock.js";
 
 console.log("beep boop");
 
@@ -22,3 +23,11 @@ inputCollector.on("newnote", (note) => {
 });
 
 inputCollector.on("newbatch", () => (actualNotes = []));
+
+//
+
+const clockInput = new easymidi.Input("IAC Driver clock");
+
+const clock = new Clock(clockInput);
+
+
